@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="/css/dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<html>
+  <!--<h1>LA MATEMATICA SPIEGATA DA VERDOSCI</h1>-->
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Dashboard Capri PlanB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+
+        <div class="logo_name" style="color: #000;">DASHBOARD</div>
+        <i class='fa-solid fa-bars' id="btn" style="color: #000;"></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="index.html">
+            <i class='fa-solid fa-home'></i>
+            <span class="links_name">Home</span>
+          </a>
+          <span class="tooltip">Home</span>
+        </li>
+        <li>
+          <a href="parabola2.html">
+            <i class='fa-solid fa-brain'></i>
+            <span class="links_name">Parabole</span>
+          </a>
+          <span class="tooltip">Parabole</span>
+        </li>
+        <li>
+          <a href="file2.html">
+            <i class='fa-solid fa-file'></i>
+            <span class="links_name">File</span>
+          </a>
+          <span class="tooltip">File</span>
+        </li>
+        <li>
+          <a href="lavagna.html">
+            <i class='fa-solid fa-pen'></i>
+            <span class="links_name">Lavagna</span>
+          </a>
+          <span class="tooltip">Lavagna</span>
+        </li>
+        <li>
+          <a href="verdosci.html">
+            <i class='fa-solid fa-star'></i>
+            <span class=" links_name">PRO</span>
+          </a>
+          <span class="tooltip">PRO</span>
+        </li>
+        <!-- <li>
+          <a href="#">
+            <i class='bx bx-folder'></i>
+            <span class="links_name">File Manager</span>
+          </a>
+          <span class="tooltip">Files</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-cart-alt'></i>
+            <span class="links_name">Order</span>
+          </a>
+          <span class="tooltip">Order</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-heart'></i>
+            <span class="links_name">Saved</span>
+          </a>
+          <span class="tooltip">Saved</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-cog'></i>
+            <span class="links_name">Setting</span>
+          </a>
+          <span class="tooltip">Setting</span>
+        </li> -->
+        <li class="profile">
+          <div class="profile-details">
+            <i class='bx bx-export'></i>
+            <div class="name_job">
+              <div class="name">Logout</div>
+            </div>
+          </div>
+          <i class='bx bx-log-out' id="log_out"></i>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+    <!-- INSERISCI QUI TUTTO QUELLO CHE DEVE ESSERCI NELLA DASHBOARD-->
+    </section>
+
+
+    <script>
+      let sidebar = document.querySelector(".sidebar");
+      let closeBtn = document.querySelector("#btn");
+      let searchBtn = document.querySelector(".bx-search");
+
+      closeBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+        menuBtnChange();
+      });
+
+      searchBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+        menuBtnChange();
+      });
+
+      function menuBtnChange() {
+        if (sidebar.classList.contains("open")) {
+          closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+        } else {
+          closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+      }
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"
+      integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+
+</html>
